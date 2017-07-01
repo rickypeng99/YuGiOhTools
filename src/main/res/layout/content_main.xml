@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:visibility="visible"
+    android:weightSum="1"
+    android:background="#dedede">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id = "@+id/imageMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/show"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:gravity="left"
+                    android:text="1P血量:8000"
+                    android:textColor="#ea384d"
+                    android:textSize="25sp"
+                    android:background="#ffffff"
+                    />
+
+            <com.daasuu.ahp.AnimateHorizontalProgressBar
+                android:id="@+id/bar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ahp_backgroundColor="#ff0000"
+                app:ahp_progressColor="#55ea85" />
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="VS"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="25dp"
+
+            android:background="@drawable/xinkongjianda"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id = "@+id/imageMain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/show2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:gravity="end"
+                    android:text="2P血量:8000"
+                    android:textColor="#ea384d"
+                    android:textSize="25sp"
+                    android:background="#ffffff"
+                    />
+
+            <com.daasuu.ahp.AnimateHorizontalProgressBar
+                android:id="@+id/bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ahp_backgroundColor="#55ea85"
+                app:ahp_progressColor="#ff0000" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="#ffffff"
+        android:maxLines="1"
+        android:layout_marginBottom="10dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/but1plus"
+            android:layout_width="0sp"
+            android:layout_columnWeight="1"
+
+            android:layout_height="70sp"
+
+
+            android:text="1P加血"
+            android:onClick="myButtonOnClicked2"
+            android:layout_margin="0.5dp"
+            android:background="#ffffff"
+
+
+            />
+
+        <Button
+            android:id="@+id/but2plus"
+
+            android:layout_width="0sp"
+            android:layout_columnWeight="1"
+
+            android:layout_height="70sp"
+            android:onClick="myButtonOnClicked2"
+
+            android:text="2P加血"
+            android:layout_margin="0.5dp"
+            android:background="#ffffff"
+
+            />
+
+
+        <Button
+            android:id="@+id/but1minus"
+            android:layout_width="0sp"
+            android:layout_columnWeight="1"
+
+            android:layout_height="70sp"
+            android:text="1P扣血"
+            android:onClick="myButtonOnClicked2"
+            android:layout_margin="0.5dp"
+            android:background="#ffffff"
+
+
+            />
+
+        <Button
+            android:id="@+id/but2minus"
+            android:layout_width="0sp"
+            android:layout_height="70sp"
+            android:layout_columnWeight="1"
+            android:text="2P扣血"
+            android:onClick="myButtonOnClicked2"
+            android:layout_margin="0.5dp"
+            android:background="#ffffff"
+
+            />
+
+
+    </GridLayout>
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:columnCount="5"
+        android:rowCount="3"
+
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/yingxiongdushida"
+
+
+        >
+
+
+        <Button
+            android:id="@+id/num7"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="7"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/num8"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="8"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/num9"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="9"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="C"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+
+            android:text="全清"
+            android:onClick="myButtonOnClicked3"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+
+            />
+
+
+
+
+        <Button
+            android:id="@+id/num4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="4"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/num5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="5"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/num6"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="6"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/num00"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="00"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:text="骰子"
+            android:onClick="myButtonOnClicked3"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="2"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/num3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:onClick="myButtonOnClicked"
+            android:text="3"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+        android:id="@+id/num0"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+        android:onClick="myButtonOnClicked"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="#ffffff"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:text="硬币"
+            android:onClick="myButtonOnClicked3"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+
+            />
+
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>
