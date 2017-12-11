@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pikachu">
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="利用主页面下方的九宫格数字输入数值，然后使用上方的按钮进行操作。"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#05a380">
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/fadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:timeout="1000"
+        app:texts="@array/examples"
+        android:textSize="50dp"
+
+        android:textColor="#ffffff"
+        style="@style/TextAppearance.AppCompat.Headline"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f46584">
+        <com.tomer.fadingtextview.FadingTextView
+            android:id="@+id/fadingTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:timeout="1000"
+            app:texts="@array/examples"
+            android:textSize="50dp"
+
+            android:textColor="#ffffff"
+            style="@style/TextAppearance.AppCompat.Headline"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
